@@ -1,0 +1,26 @@
+.HomeStyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url("../assets/image.png");
+  background-size: 45vw 87vh;
+  background-position: left;
+ /* border: 4px dotted blue; */
+  background-repeat: no-repeat;
+}
+.HomeStocksStyle {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 49vw;
+  align-content: center;
+}
+.HomeIntroStyle {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 40vw;
+  align-content: center;
+  justify-content: center;
+  font-family: Lato !important;
+}
