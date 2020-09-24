@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import StockCard from './components/stockCard.js'
+import StockCard from './components/stockCard.js';
 
 class Home extends React.Component {
     constructor(props) {
