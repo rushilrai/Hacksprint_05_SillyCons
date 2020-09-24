@@ -5,8 +5,7 @@ import Dashboard from './dashboard.js';
 
 function App() {
   const appStyle = {
-    backgroundColor: '#f9fafc',
-    height: '100vh'
+    height: '100vh',
   }
   return (
     <main style={appStyle}>

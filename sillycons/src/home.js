@@ -10,28 +10,51 @@ class Home extends React.Component {
         }
     }
 
-  /*  componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res => res.json())
-            .then(json => {
-                console.log(json);
-                this.setState({
-                    isLoaded: true,
-                })
-            })
-    } */
-
-
     render() {
-        var { isLoaded} = this.state;
+        var { isLoaded } = this.state;
+        const HomeStyle = {
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            //alignItems: 'space-around',
+            //width: '100vw',
+           // border: '4px dotted blue',
+        }
+        const HomeStocksStyle = {
+            display: 'flex',
+            flexWrap: 'wrap',
+            height: '100vh',
+            width: '49vw',
+            alignContent: 'center',
+           // border: '4px dotted blue',
+        }
+        const HomeIntroStyle = {
+            display: 'flex',
+            flexWrap: 'wrap',
+            height: '100vh',
+            width: '40vw',
+            alignContent: 'center',
+            justifyContent: 'center',
+          //  border: '4px dotted blue',
+            fontFamily: 'Lato',
+        }
 
         if (!isLoaded) {
             return <center>....</center>
         }
         else {
-            return <div>
-                <Link to='/dashboard'>Go to Dash</Link>
-                <StockCard />
+            return <div style={HomeStyle}>
+                <div style={HomeIntroStyle}>
+                    <h1>Introductory Content</h1>
+                </div>
+                <div style={HomeStocksStyle}>
+                    <StockCard />
+                    <StockCard />
+                    <StockCard />
+                    <StockCard />
+                    <StockCard />
+                    <StockCard />
+                </div>
             </div>;
         }
 
