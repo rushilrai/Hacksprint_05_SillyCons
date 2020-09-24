@@ -36,7 +36,7 @@ class Home extends React.Component {
             alignContent: 'center',
             justifyContent: 'center',
           //  border: '4px dotted blue',
-            fontFamily: 'Lato',
+            fontFamily: 'Lato !important',
         }
 
         if (!isLoaded) {

@@ -15,24 +15,24 @@ class StockCard extends React.Component {
         }
         const codeStyle = {
             margin: '0px',
-            fontFamily: 'Lato',
+            fontFamily: 'Lato !important',
             color: 'grey',
         }
         const nameStyle = {
             margin: '0px',
-            fontFamily: 'Lato',
+            fontFamily: 'Lato !important',
             color: 'black',
         }
         const highStyle = {
            // paddingTop: '5px',
             margin: '0px',
-            fontFamily: 'Lato',
+            fontFamily: 'Lato !important',
             color: 'green',
         }
         const lowStyle = {
             //paddingTop: '5px',
             margin: '0px',
-            fontFamily: 'Lato',
+            fontFamily: 'Lato !important',
             color: 'red',
         }
         return <div style={stockCardStyle}>
