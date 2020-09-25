@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/button.css'
 import '../styles/stockCard.css'
 
@@ -9,6 +10,10 @@ function sleep(milliseconds) {
       currentDate = Date.now();
     } while (currentDate - date < milliseconds);
   }
+
+function navigateToDash(code) {
+
+}
 
 class StockCard extends React.Component {
     constructor(props) {
@@ -126,7 +131,7 @@ class StockCard extends React.Component {
                             <h3 style={lowStyle}>L: ${low}</h3>
                         </div>
                         <div className='col-4 my-auto'>
-                            <div className='buttonStyle'>Predict</div>
+                            <div className='buttonStyle' onClick={navigateToDash(this.props.code)}><Link to='/dashboard'>Predict</Link></div>
                         </div>
 
                     </div>
