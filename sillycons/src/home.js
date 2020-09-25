@@ -44,11 +44,7 @@ class Home extends React.Component {
                 </div>
                 <div className='HomeStocksStyle'>
                     <StockCard code="AAPL" delay="0" />
-                    <StockCard code="MSFT" delay="0" />
-                    <StockCard code="AMZN" delay="0" />
-                    <StockCard code="GOOGL" delay="0" />
-                    <StockCard code="KO" delay="0" />
-                    <StockCard code="DIS" delay="1000" />
+                   
                 </div>
             </div>;
         }

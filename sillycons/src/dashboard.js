@@ -2,8 +2,21 @@ import React from 'react';
 import DashStockCard from './components/dashstockCard.js'
 
 class Dashboard extends React.Component {
+
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      stock: '',
+    }
+  }
+  componentDidMount() {
+    const code = localStorage.getItem('code');
+    this.setState({stock: code});
+  }
   render() {
-      return <div><DashStockCard /></div>;
+    var { stock } = this.state;
+    return <div>{stock}</div>;
   }
 }
 //What is life? 

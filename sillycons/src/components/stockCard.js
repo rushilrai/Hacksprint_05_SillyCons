@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from "react-router-dom";
+import Dashboard from '../dashboard';
 import '../styles/button.css'
 import '../styles/stockCard.css'
 
@@ -7,13 +8,10 @@ function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
     do {
-      currentDate = Date.now();
+        currentDate = Date.now();
     } while (currentDate - date < milliseconds);
-  }
-
-function navigateToDash(code) {
-
 }
+
 
 class StockCard extends React.Component {
     constructor(props) {
@@ -131,7 +129,7 @@ class StockCard extends React.Component {
                             <h3 style={lowStyle}>L: ${low}</h3>
                         </div>
                         <div className='col-4 my-auto'>
-                            <div className='buttonStyle' onClick={navigateToDash(this.props.code)}><Link to='/dashboard'>Predict</Link></div>
+                           <Link to='/dashboard'><div className='buttonStyle' onClick={goToDash(code)}>Predict</div></Link> 
                         </div>
 
                     </div>
@@ -140,6 +138,10 @@ class StockCard extends React.Component {
         }
 
     }
+}
+
+async function goToDash(code) {
+ await localStorage.setItem('code', code);
 }
 
 export default StockCard;
