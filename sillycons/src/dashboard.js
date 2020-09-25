@@ -1,8 +1,9 @@
 import React from 'react';
+import DashStockCard from './components/dashstockCard.js'
 
 class Dashboard extends React.Component {
   render() {
-      return <div><h1>dash</h1></div>;
+      return <div><DashStockCard /></div>;
   }
 }
 //What is life? 

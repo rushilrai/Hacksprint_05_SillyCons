@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './home.js';
 import Dashboard from './dashboard.js';
+import './App.css';
 
 function App() {
   const appStyle = {
