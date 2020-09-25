@@ -46,8 +46,8 @@ class Home extends React.Component {
                     <StockCard code="AAPL" delay="0" />
                     <StockCard code="MSFT" delay="0" />
                     <StockCard code="AMZN" delay="0" />
-                    <StockCard code="GOOGL" delay="1000" />
-                    <StockCard code="KO" delay="1000" />
+                    <StockCard code="GOOGL" delay="0" />
+                    <StockCard code="KO" delay="0" />
                     <StockCard code="DIS" delay="1000" />
                 </div>
             </div>;

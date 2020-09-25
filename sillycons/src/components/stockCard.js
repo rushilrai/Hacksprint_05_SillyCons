@@ -103,7 +103,7 @@ class StockCard extends React.Component {
             justifyContent: 'space-between',
         }
         if (!isLoaded) {
-            return <div>loading</div>
+            return <div className='loadingCard'>Loading</div>
         }
         else {
             return <div className='stockCardStyle'>

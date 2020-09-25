@@ -7,6 +7,20 @@
     margin: 20px;
     transition: all 0.5s;
   }
+
+  .loadingCard {
+    height: 10vw;
+    width: 22vw;
+    border-radius: 10px;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 1.5vw;
+    color: #5786f8;
+  }
   
   .stockCardStyle:hover {
     border-radius: 3px;
