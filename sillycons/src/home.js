@@ -43,8 +43,12 @@ class Home extends React.Component {
                     <h1 style={descStyle}>Project Description</h1>
                 </div>
                 <div className='HomeStocksStyle'>
-                    <StockCard code="AAPL" delay="0" />
-                   
+                    <StockCard code="TSLA" delay="0" />
+                    <StockCard code="MSFT" delay="0" />
+                    <StockCard code="AMZN" delay="0" />
+                    <StockCard code="GOOGL" delay="0" />
+                    <StockCard code="IBM" delay="0" />
+                    <StockCard code="FB" delay="1000" />
                 </div>
             </div>;
         }
