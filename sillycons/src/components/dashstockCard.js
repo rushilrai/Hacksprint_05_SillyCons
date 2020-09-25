@@ -25,10 +25,9 @@ class DashStockCard extends React.Component {
     }
 
     componentDidMount() {
-        var delay = this.props.delay;
-        var code = this.props.code;
-        sleep(delay);
-        fetch(`https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?region=US&symbol=${code}`, {
+        
+        sleep(0);
+        fetch(`https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?region=US&symbol=MSFT`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",

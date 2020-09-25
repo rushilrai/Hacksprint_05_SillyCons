@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kash</title>
+    <link rel="icon" href="img/c6.jpg" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/stock.css">
+</head>
+
+<body>
+    <!--navigation bar-->
+	 <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+			<!--Button-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<a class="ml-5" href="./index.html" id="nav-name"><img src="img/c6.jpg" alt="logo" class="logo img-fluid mr-4"></a>
+			<!--enable to open and close button-->
+			<div class="collapse navbar-collapse" id="Navbar">
+				 <!--ml=margin left-->
+				<ul class="navbar-nav ml-auto mr-5">
+					<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+					<li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+					<li class="nav-item"><a class="nav-link" href='./companies.html'>Companies</a></li>
+				</ul>
+			</div>
+</nav>
+ <!--end of navigation-->
+<div class="container mt-5">
+    <div class="row">
+        <img class="embed-responsive" src="img/a1.jpg" alt="">
+        <div class="col text-center">
+            <h2>Team SillyCons Present,</h2>
+            <h1 id="title">Kash</h1>
+            <p>Kash is a Stock Market Price Prediction for the next 10 days using machine learning. Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value).
+
+                Here is the Machine Learning project described that tries to predict stock data using linear regression algorithm. Linear regression is the most basic and commonly used predictive analysis. All input data should be put in the matrix X, each column of the matrix represents a data example. And the "answers" should be put in vector y. Then we can advance the hypothesis:
+                
+                hθ(x)=θTX,(1)
+                where X − matrix (n+1)×m, θ− vector of "weights" features (parameters) length (n+1), m − number of examples, n − number of features (parameters).
+                
+                Since our goal is to train the model as close as possible to real values, we should minimize the cost function J(θ):
+                
+                J(θ)=12m∑i=1m(hθ(X(i))−y(i))2.(2)
+                This is a simplified explanation of a linear regression model. Now we can test it on a real data.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<div class="row row-about d-flex align-items-center justify-content-center text-center">
+    <div class="col-12 mt-5">
+        <h2>Uncertainity in the Stock Market</h2>
+        <img src="img/wave.png" alt="wave" width="150rem">
+        
+        <div class="mt-5 row row-about row row-about d-flex align-items-center justify-content-center text-left">
+            <div class="col-12 col-md-6">
+                <img class="embed-responsive" src="img/a3.jpg" alt="" >
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p>At the most fundamental level, supply and demand in the market determine stock price.
+                Price times the number of shares outstanding (market capitalization) is the value of a company. Comparing just the share price of two companies is meaningless.
+                Theoretically earnings are what affect investors' valuation of a company, but there are other indicators that investors use to predict stock price. Remember, it is investors' sentiments, attitudes, and expectations that ultimately affect stock prices.
+                There are many theories that try to explain the way stock prices move the way they do. Unfortunately, there is no one theory that can explain everything.
+                </p>
+            </div>
+        </div>
+     </div>
+    
+    
+    <div class="col-12 mt-5">
+        <h2>Machine Learning Implementation</h2>
+        <img src="img/wave.png" alt="wave" width="150rem">
+        
+        <div class="mt-5 row row-about row row-about d-flex align-items-center justify-content-center text-left">
+            <div class="col-12 col-md-6 order-first order-sm-last">
+                <img class="embed-responsive" src="img/a5.jpg" alt="" >
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.</p>
+                <p>The good thing about stock price history is that it’s basically a well labelled pre formed dataset. There is a service called AlphaVantage. They offer the daily price history of NASDAQ stocks for the past 20 years. This includes the open, high, low, close and volume of trades for each day, from today all the way back up to 1999. </p>
+            </div>
+        </div>
+     </div>
+    
+    
+    <div class="col-12 mt-5">
+        <h2>Stock Prices Prediction Using ML</h2>
+        <img src="img/wave.png" alt="wave" width="150rem">
+        
+        <div class="mt-5 row row-about row row-about d-flex align-items-center justify-content-center text-left">
+            <div class="col-12 col-md-6">
+                <img class="embed-responsive" src="img/a4.png" alt="" >
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p>Training Testing and Evaluation.</p>
+            </div>
+        </div>
+     </div>		
+</div>
+</div>
+	 
+    
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	
+</body>
+</html>
