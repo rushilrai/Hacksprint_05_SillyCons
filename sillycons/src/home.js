@@ -40,7 +40,7 @@ class Home extends React.Component {
                 <div className='HomeIntroStyle'>
                     <h1 style={teamnameStyle}>Team SillyCons present,</h1>
                     <h1 style={projectnameStyle}>KASH</h1>
-                    <h1 style={descStyle}>Project Description</h1>
+                    <h1 style={descStyle}>Stock Market Price Prediction</h1>
                 </div>
                 <div className='HomeStocksStyle'>
                     <StockCard code="MSFT" delay="0" />
