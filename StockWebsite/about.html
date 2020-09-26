@@ -34,17 +34,7 @@
         <div class="col text-center">
             <h2>Team SillyCons Present,</h2>
             <h1 id="title">Kash</h1>
-            <p>Kash is a Stock Market Price Prediction for the next 10 days using machine learning. Supervised learning is one of the major categories of Machine Learning algorithms. "Supervised" means we already have a dataset in which "correct answers" were given. For example, we have a stock data with open values and close values for a past few years, and we want to predict future values (prices or indexes). Supervised learning is subdivided into Regression problem and Classification problem. Regression problem means we're trying to predict a continuous value output (like predict stock value).
-
-                Here is the Machine Learning project described that tries to predict stock data using linear regression algorithm. Linear regression is the most basic and commonly used predictive analysis. All input data should be put in the matrix X, each column of the matrix represents a data example. And the "answers" should be put in vector y. Then we can advance the hypothesis:
-                
-                hθ(x)=θTX,(1)
-                where X − matrix (n+1)×m, θ− vector of "weights" features (parameters) length (n+1), m − number of examples, n − number of features (parameters).
-                
-                Since our goal is to train the model as close as possible to real values, we should minimize the cost function J(θ):
-                
-                J(θ)=12m∑i=1m(hθ(X(i))−y(i))2.(2)
-                This is a simplified explanation of a linear regression model. Now we can test it on a real data.</p>
+            <p>Kash is a Stock Market Price Prediction for the next 10 days using machine learning algorithms. We have used machine learning and deep learning algorithms. You would like to model stock prices correctly, so as a stock buyer you can reasonably decide when to buy stocks and when to sell them to make a profit. This is where time series modelling comes in. You need good machine learning models that can look at the history of a sequence of data and correctly predict what the future elements of the sequence are going to be.</p>
         </div>
     </div>
     <div class="row">
@@ -97,10 +87,28 @@
         
         <div class="mt-5 row row-about row row-about d-flex align-items-center justify-content-center text-left">
             <div class="col-12 col-md-6">
-                <img class="embed-responsive" src="img/a4.png" alt="" >
+                <img class="embed-responsive" src="img/c8.jpg" alt="" >
             </div>
             <div class="col-sm-12 col-md-6">
-                <p>Training Testing and Evaluation.</p>
+                <p>We will implement a mix of machine learning algorithms to predict the future stock price of this company, starting with simple algorithms like averaging and linear regression, and then move on to advanced techniques like Auto ARIMA and LSTM.
+
+                    The core idea behind this article is to showcase how these algorithms are implemented. We will briefly describe the technique and provide relevant links to brush up on the concepts as and when necessary.</p>
+                <h3>Auto ARIMA</h3>
+                <p>Introduction
+                    ARIMA is a very popular statistical method for time series forecasting. ARIMA models take into account the past values to predict the future values. There are three important parameters in ARIMA:
+
+                    p (past values used for forecasting the next value)
+                    q (past forecast errors used to predict the future values)
+                    d (order of differencing)
+                    Parameter tuning for ARIMA consumes a lot of time. So we will use auto ARIMA which automatically selects the best combination of (p,q,d) that provides the least error.
+                </p>
+                    <h3>Long Short Term Memory (LSTM)</h3>
+                <p> Introduction
+                    LSTMs are widely used for sequence prediction problems and have proven to be extremely effective. The reason they work so well is because LSTM is able to store past information that is important, and forget the information that is not. LSTM has three gates:
+
+                    The input gate: The input gate adds information to the cell state
+                    The forget gate: It removes the information that is no longer required by the model
+                    The output gate: Output Gate at LSTM selects the information to be shown as output.</p>
             </div>
         </div>
      </div>		
