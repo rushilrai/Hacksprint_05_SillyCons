@@ -1,3 +1,4 @@
 # Hacksprint_05_SillyCons
-Website with Project Analysis:
+Websites with Project Analysis:
 https://kashbysillycons.herokuapp.com/
+https://kashinfo.netlify.app/
