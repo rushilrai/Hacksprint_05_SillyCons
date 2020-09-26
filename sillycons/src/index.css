@@ -4,3 +4,12 @@ body {
   background-color: #f8f8fa;
 }
 
+.fade-in {
+  animation: fade 0.9s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}

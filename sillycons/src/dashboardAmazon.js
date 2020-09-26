@@ -4,26 +4,65 @@ import './styles/dashboardAmazon.css'
 
 class DashboardAmazon extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      current: 'ARIMA'
+    }
+  }
+  toggle = () => {
+    var { current } = this.state;
+    console.log('toggle');
+    if (current === 'ARIMA') {
+      this.setState({ current: 'LSTM' })
+    } else {
+      this.setState({ current: 'ARIMA' })
+    }
+  }
 
 
   render() {
+    var { current } = this.state;
     /*const leftStyle = {
       border: '4px dotted blue',
     };*/
-    return <div className='row'>
-      <div className='col-4'><center><DashStockCard /></center></div>
-      <div className='col-7'>
-        <div className='row'>
-          <div className='graphCloseAmazon'>Closing Prices</div>
-          <div className='graphOpenAmazon'>Opening Prices</div>
+    if (current === 'ARIMA') {
+      return <div className='row'>
+        <div className='col-4'>
+          <center>
+            <DashStockCard />
+            <div className='toggleAmazon'>
+              <div onClick={this.toggle}>{current}</div>
+            </div>
+          </center>
         </div>
-        <div className='row'>
-        <div className='graphHighAmazon'>Day High</div>
-        <div className='graphLowAmazon'>Day Low</div>
+        <div className='col-7'>
+          <div className='row'>
+            <div className='graphCloseAmazon'>Closing Prices</div>
+            <div className='graphOpenAmazon'>Opening Prices</div>
+          </div>
+          <div className='row'>
+            <div className='graphHighAmazon'>Day High</div>
+            <div className='graphLowAmazon'>Day Low</div>
+          </div>
         </div>
-      </div>
-
-    </div>;
+      </div>;
+    }
+    else {
+      return <div className='row'>
+        <div className='col-4'>
+          <center>
+            <DashStockCard />
+            <div className='toggleAmazon'>
+              <div onClick={this.toggle}>{current}</div>
+            </div>
+          </center>
+        </div>
+        <div className='col-7'>
+          <div className='graphLSTMAmazon'></div>
+        </div>
+      </div>;
+    }
   }
 }
 //What is life? 
