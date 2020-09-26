@@ -2,55 +2,42 @@ import React from 'react';
 import '../styles/button.css'
 import '../styles/stockCard.css'
 
-function sleep(milliseconds) {
+/*function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
     do {
       currentDate = Date.now();
     } while (currentDate - date < milliseconds);
-  }
+  }*/
 
 class DashStockCard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoaded: false,
-            delay: this.props.delay,
-            code: this.props.code,
-            name: '',
+            code: '',
             high: '',
             low: '',
+            name: '',
             cap: '',
         }
     }
-
     componentDidMount() {
-        
-        sleep(0);
-        fetch(`https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?region=US&symbol=MSFT`, {
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-                "x-rapidapi-key": "0b6054cf05msh611c1d35bc54b44p1b4c29jsn1853a52efa31"
-            }
-        })
-            .then(res => res.json())
-            // .then(obj => {console.log(obj['quoteType']['longName'])})
-            .then(obj => {
-                this.setState({
-                    isLoaded: true,
-                    name: obj['quoteType']['longName'],
-                    //code: obj['quoteType']['symbol'],
-                    high: obj['summaryDetail']['dayHigh']['fmt'],
-                    low: obj['summaryDetail']['dayLow']['fmt'],
-                    cap: obj['price']['marketCap']['fmt'],
-                })
-            })
+        const code = localStorage.getItem('code');
+        const high = localStorage.getItem('high');
+        const low = localStorage.getItem('low');
+        const name = localStorage.getItem('name');
+        const cap = localStorage.getItem('cap');
+        this.setState({
+            code: code,
+            high: high,
+            low: low,
+            name: name,
+            cap: cap,
+        });
     }
 
-
     render() {
-        var { isLoaded, name, code, high, low, cap } = this.state;
+        var { name, code, high, low, cap } = this.state;
         const textBoxStyle = {
             margin: '10px',
         }
@@ -58,22 +45,22 @@ class DashStockCard extends React.Component {
             margin: '0px',
             fontFamily: 'Lato !important',
             color: 'grey',
-            fontSize: '1.5vw'
+            fontSize: '2.2vw'
         }
         const nameStyle = {
             margin: '0px',
             fontFamily: 'Lato !important',
             color: 'black',
-            fontSize: '2vw',
+            fontSize: '2.7vw',
             fontWeight: '700',
-            whiteSpace: 'nowrap',
+            whiteSpace: 'wrap',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
         }
         const capStyle = {
             fontFamily: 'Lato !important',
             color: '#5786f8',
-            fontSize: '1.5vw',
+            fontSize: '2.5vw',
             fontWeight: '900',
             textAlign: 'center',
         }
@@ -82,56 +69,49 @@ class DashStockCard extends React.Component {
             margin: '0px',
             fontFamily: 'Lato !important',
             color: 'green',
-            fontSize: '1.3vw'
+            fontSize: '2vw'
         }
         const lowStyle = {
             //paddingTop: '5px',
             margin: '0px',
             fontFamily: 'Lato !important',
             color: 'red',
-            fontSize: '1.3vw'
-        }
-        const buttonRow = {
-            //border: '4px dotted blue',
-            justifyContent: 'space-between',
-            //alignContent: 'center',
-            // marginRight: '10px',
+            fontSize: '2vw'
         }
         const topRow = {
+            width: '22vw',
+            margin: '10px',
             //border: '4px dotted blue',
-            justifyContent: 'space-between',
+            // justifyContent: 'left',
         }
-        if (!isLoaded) {
-            return <div className='loadingCard'>Loading</div>
-        }
-        else {
-            return <div className='stockCardStyle'>
-                <div style={textBoxStyle}>
-                    <div className='row' style={topRow}>
-                        <div className='col-7'>
-                            <h2 style={codeStyle}>{code}</h2>
-                            <h1 style={nameStyle}>{name}</h1>
-                        </div>
-                        <div className='col-5 my-auto'>
-                            <h2 style={capStyle}>
-                                $ {cap}
-                            </h2>
-                        </div>
-                    </div>
-                    <br></br>
-                    <div className='row' style={buttonRow}>
-                        <div className='col-7'>
-                            <h3 style={highStyle}>H: ${high}</h3>
-                            <h3 style={lowStyle}>L: ${low}</h3>
-                        </div>
-                        <div className='col-4 my-auto'>
-                            <div className='buttonStyle'>Predict</div>
-                        </div>
 
+        return <div className='stockDashCardStyle'>
+            <div style={textBoxStyle}>
+            <br></br>
+                <div className='row' style={topRow}>
+                    <div>
+                        <h2 style={codeStyle}>{code}</h2>
+                        <h1 style={nameStyle}>{name}</h1>
                     </div>
                 </div>
-            </div>;
-        }
+                <div className='row' style={topRow}>
+                    <div>
+                        <h2 style={capStyle}>
+                            ${cap}
+                        </h2>
+                    </div>
+                </div>
+                <br></br>
+                <div className='row' style={topRow}>
+                    <div>
+                        <h3 style={highStyle}>H: ${high}</h3>
+                        <h3 style={lowStyle}>L: ${low}</h3>
+                    </div>
+                </div>
+                <br></br>
+            </div>
+        </div>;
+
 
     }
 }

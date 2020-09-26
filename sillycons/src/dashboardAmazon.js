@@ -1,8 +1,8 @@
 import React from 'react';
 import DashStockCard from './components/dashstockCard.js';
-import './styles/dashboard.css'
+import './styles/dashboardAmazon.css'
 
-class Dashboard extends React.Component {
+class DashboardAmazon extends React.Component {
 
 
 
@@ -14,12 +14,12 @@ class Dashboard extends React.Component {
       <div className='col-4'><center><DashStockCard /></center></div>
       <div className='col-7'>
         <div className='row'>
-          <div className='graphClose'>Closing Prices</div>
-          <div className='graphOpen'>Opening Prices</div>
+          <div className='graphCloseAmazon'>Closing Prices</div>
+          <div className='graphOpenAmazon'>Opening Prices</div>
         </div>
         <div className='row'>
-        <div className='graphHigh'>Day High</div>
-        <div className='graphLow'>Day Low</div>
+        <div className='graphHighAmazon'>Day High</div>
+        <div className='graphLowAmazon'>Day Low</div>
         </div>
       </div>
 
@@ -36,4 +36,4 @@ class Dashboard extends React.Component {
 
 //What do you call an Animal you keep in a Car?
 //For Answer refer to exampleGraph.js
-export default Dashboard;
+export default DashboardAmazon;

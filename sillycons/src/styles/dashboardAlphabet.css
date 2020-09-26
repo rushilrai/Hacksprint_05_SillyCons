@@ -1,0 +1,82 @@
+.graphCloseAlphabet {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/alphabet/close.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color: grey;
+  }
+  
+  
+  
+  .graphOpenAlphabet {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/alphabet/open.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color:  #5786f8;
+  }
+  
+  .graphHighAlphabet {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/alphabet/high.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color:  red;
+  }
+  
+  .graphLowAlphabet {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/alphabet/low.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color:  green;
+  }
+  

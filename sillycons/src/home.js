@@ -39,16 +39,17 @@ class Home extends React.Component {
             return <div className='HomeStyle'>
                 <div className='HomeIntroStyle'>
                     <h1 style={teamnameStyle}>Team SillyCons present,</h1>
-                    <h1 style={projectnameStyle}>Project Name</h1>
+                    <h1 style={projectnameStyle}>KASH</h1>
                     <h1 style={descStyle}>Project Description</h1>
                 </div>
                 <div className='HomeStocksStyle'>
-                    <StockCard code="TSLA" delay="0" />
                     <StockCard code="MSFT" delay="0" />
                     <StockCard code="AMZN" delay="0" />
                     <StockCard code="GOOGL" delay="0" />
-                    <StockCard code="IBM" delay="0" />
                     <StockCard code="FB" delay="1000" />
+                    <StockCard code="TSLA" delay="0" />
+                    <StockCard code="IBM" delay="0" />
+
                 </div>
             </div>;
         }

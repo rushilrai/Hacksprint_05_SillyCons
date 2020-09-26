@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from "react-router-dom";
-import Dashboard from '../dashboard';
+import { Link } from "react-router-dom";
 import '../styles/button.css'
 import '../styles/stockCard.css'
 
@@ -27,30 +26,30 @@ class StockCard extends React.Component {
         }
     }
 
-    componentDidMount() {
-        var delay = this.props.delay;
-        var code = this.props.code;
-        sleep(delay);
-        fetch(`https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?region=US&symbol=${code}`, {
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-                "x-rapidapi-key": "0b6054cf05msh611c1d35bc54b44p1b4c29jsn1853a52efa31"
-            }
-        })
-            .then(res => res.json())
-            // .then(obj => {console.log(obj['quoteType']['longName'])})
-            .then(obj => {
-                this.setState({
-                    isLoaded: true,
-                    name: obj['quoteType']['longName'],
-                    //code: obj['quoteType']['symbol'],
-                    high: obj['summaryDetail']['dayHigh']['fmt'],
-                    low: obj['summaryDetail']['dayLow']['fmt'],
-                    cap: obj['price']['marketCap']['fmt'],
-                })
-            })
-    }
+     componentDidMount() {
+          var delay = this.props.delay;
+          var code = this.props.code;
+          sleep(delay);
+          fetch(`https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?region=US&symbol=${code}`, {
+              "method": "GET",
+              "headers": {
+                  "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
+                  "x-rapidapi-key": "3ffaa43085mshb1441d47434b2c5p165a0bjsn2e1c7fde6f39"
+              }
+          })
+              .then(res => res.json())
+              // .then(obj => {console.log(obj['quoteType']['longName'])})
+              .then(obj => {
+                  this.setState({
+                      isLoaded: true,
+                      name: obj['quoteType']['longName'],
+                      //code: obj['quoteType']['symbol'],
+                      high: obj['summaryDetail']['dayHigh']['fmt'],
+                      low: obj['summaryDetail']['dayLow']['fmt'],
+                      cap: obj['price']['marketCap']['fmt'],
+                  })
+              })
+      }
 
 
     render() {
@@ -129,7 +128,7 @@ class StockCard extends React.Component {
                             <h3 style={lowStyle}>L: ${low}</h3>
                         </div>
                         <div className='col-4 my-auto'>
-                           <Link to='/dashboard'><div className='buttonStyle' onClick={goToDash(code)}>Predict</div></Link> 
+                            <Link to={`${code}`}><div className='buttonStyle' onClick={() => goToDash(code, name, high, low, cap)}>Predict</div></Link>
                         </div>
 
                     </div>
@@ -140,8 +139,12 @@ class StockCard extends React.Component {
     }
 }
 
-async function goToDash(code) {
- await localStorage.setItem('code', code);
-}
-
 export default StockCard;
+
+function goToDash(code, name, high, low, cap) {
+    localStorage.setItem('code', code);
+    localStorage.setItem('name', name);
+    localStorage.setItem('high', high);
+    localStorage.setItem('low', low);
+    localStorage.setItem('cap', cap);
+}

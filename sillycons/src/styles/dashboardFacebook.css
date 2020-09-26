@@ -1,0 +1,82 @@
+.graphCloseFacebook {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/facebook/close.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color: grey;
+  }
+  
+  
+  
+  .graphOpenFacebook {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/facebook/open.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color:  #5786f8;
+  }
+  
+  .graphHighFacebook {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/facebook/high.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color:  red;
+  }
+  
+  .graphLowFacebook {
+    width: 26.5vw;
+    height: 20vw;
+    background-color: white;
+    background-image: url("../assets/facebook/low.png");
+    background-size: 24vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #f5f4f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 10vw;
+    font-family: Lato !important;
+    font-weight: 900;
+    font-size: 2vw;
+    color:  green;
+  }
+  
