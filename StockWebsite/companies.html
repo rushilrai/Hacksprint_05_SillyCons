@@ -6,9 +6,10 @@
 	<link rel="icon" href="img/c6.jpg" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/stock.css">
+	<!-- <script src="js/script.js" type="text/javascript"></script> -->
 </head>
 
-<body>
+<body >
 
 	 <!--navigation bar-->
 	 <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
@@ -29,64 +30,329 @@
 			</div>
 </nav>
  <!--end of navigation-->
+ 	<!--Prediction Table MODAL-->
+	 <div id="predictionModal1" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="content">
 
+			<!--content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Prediction for IBM</h3>
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<img class="embed-responsive" src="img/ibm/close.png"alt ="">Closing
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img class="embed-responsive" src="img/ibm/open.png" alt="">Opening
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/ibm/high.png" alt="">High
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/ibm/low.png" alt="">Low
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--Prediction Table MODAL-->
+	<div id="predictionModal2" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="content">
+
+			<!--content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Prediction for Microsoft</h3>
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<img class="embed-responsive" src="img/microsoft/close.png"alt ="">Closing
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img class="embed-responsive" src="img/microsoft/open.png" alt="">Opening
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/microsoft/high.png" alt="">High
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/microsoft/low.png" alt="">Low
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--Prediction Table MODAL-->
+	<div id="predictionModal3" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="content">
+
+			<!--content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Prediction for Amazon</h3>
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<img class="embed-responsive" src="img/amazon/close.png"alt ="">Closing
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img class="embed-responsive" src="img/amazon/open.png" alt="">Opening
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/amazon/high.png" alt="">High
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/amazon/low.png" alt="">Low
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--Prediction Table MODAL4-->
+	<div id="predictionModal4" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="content">
+
+			<!--content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Prediction for Facebook</h3>
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<img class="embed-responsive" src="img/facebook/close.png"alt ="">Closing
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img class="embed-responsive" src="img/facebook/open.png" alt="">Opening
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/facebook/high.png" alt="">High
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/facebook/low.png" alt="">Low
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--Prediction Table MODAL5-->
+	<div id="predictionModal5" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="content">
+
+			<!--content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Prediction for Alphabet</h3>
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<img class="embed-responsive" src="img/alphabet/close.png"alt ="">Closing
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img class="embed-responsive" src="img/alphabet/open.png" alt="">Opening
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/alphabet/high.png" alt="">High
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/alphabet/low.png" alt="">Low
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--Prediction Table MODAL6-->
+	<div id="predictionModal6" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg" role="content">
+
+			<!--content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Prediction for Telsa</h3>
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<img class="embed-responsive" src="img/ibm/close.png"alt ="">Closing
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img class="embed-responsive" src="img/ibm/open.png" alt="">Opening
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/ibm/high.png" alt="">High
+							</div>
+							<div class="col-4">
+								<img class="embed-responsive" src="img/ibm/low.png" alt="">Low
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+<!-- TradingView Widget BEGIN -->
+<div class="mt-5 tradingview-widget-container">
+	<div class="tradingview-widget-container__widget"></div>
+	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+	{
+	"symbols": [
+	  {
+		"proName": "FOREXCOM:SPXUSD",
+		"title": "S&P 500"
+	  },
+	  {
+		"proName": "FOREXCOM:NSXUSD",
+		"title": "Nasdaq 100"
+	  },
+	  {
+		"proName": "FX_IDC:EURUSD",
+		"title": "EUR/USD"
+	  },
+	  {
+		"proName": "BITSTAMP:BTCUSD",
+		"title": "BTC/USD"
+	  },
+	  {
+		"proName": "BITSTAMP:ETHUSD",
+		"title": "ETH/USD"
+	  }
+	],
+	"colorTheme": "light",
+	"isTransparent": false,
+	"displayMode": "adaptive",
+	"locale": "in"
+  }
+	</script>
+  </div>
+  <!-- TickerTape Widget END -->
 	 
     <div class="container mt-5">
         <div class="row">
             <!--Card-->
-            <div class="col-4">
+            <div class="mt-2 col-12 col-lg-4 ">
 				<div class="card">
-					<h3 class="card-header bg-dark text-white">IBM</h3>
+					<h3 class="card-header bg-dark text-white"><img src="img/logo1.png" width="120em" alt=""></h3>
 					<div class="card-body">
 						<dl class="row">
 							<dt class="col-6">Open</dt>
-							<dd class="col-6">Value</dd>
+							<dd class="col-6" id="cap">117.60</dd>
 							<dt class="col-6">Close</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">High</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">Low</dt>
-							<dd class="col-6">Low</dd>
+							<dd class="col-6" id="cap">118.95</dd>
+							<dt class="col-6">High&nbsp;&nbsp;<img src="img/green.png" width="15em"></dt>
+							<dd class="col-6">119.41</dd>
+							<dt class="col-6">Low&nbsp;&nbsp;&nbsp;<img src="img/red.png" width="15em"></dt>
+							<dd class="col-6">116.94</dd>
 						</dl>	
+						<!--Prediction block button-->
+						<div class="col-12 col-sm align-self-center">
+							<!--modal predict-->
+							<a class="btn btn-secondary nav-link btn-block"data-toggle="modal" data-target="#predictionModal1"  href="#prediction" role="button" id="predictionModalToggle">Prediction</a>
+						</div>	
 					</div>
 				</div>
             </div>
 			<!--end of card-->
 			<!--Card-->
-            <div class="col-4">
+            <div class="mt-2 col-12 col-lg-4 ">
 				<div class="card">
-					<h3 class="card-header bg-dark text-white">Microsoft</h3>
+					<h3 class="card-header bg-dark text-white"><img src="img/logo2.png" width="50em" alt="">&nbsp;&nbsp;Microsoft</h3>
 					<div class="card-body">
 						<dl class="row">
 							<dt class="col-6">Open</dt>
-							<dd class="col-6">Value</dd>
+							<dd class="col-6" id="cap">203.55</dd>
 							<dt class="col-6">Close</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">High</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">Low</dt>
-							<dd class="col-6">Low</dd>
-						</dl>	
+							<dd class="col-6" id="cap">207.82</dd>
+							<dt class="col-6">High&nbsp;&nbsp;<img src="img/green.png" width="15em"></dt>
+							<dd class="col-6" id="high">209.04</dd>
+							<dt class="col-6">Low&nbsp;&nbsp;&nbsp;<img src="img/red.png" width="15em"></dt>
+							<dd class="col-6" id="low">202.54</dd>
+						</dl>
+						<!--Prediction block button-->
+							<div class="col-12 col-sm align-self-center">
+								<!--modal predict-->
+								<a class="btn btn-secondary nav-link btn-block"data-toggle="modal" data-target="#predictionModal2"  href="#prediction" role="button" id="predictionModalToggle">Prediction</a>
+							</div>	
 					</div>
 				</div>
             </div>
 			<!--end of card-->
 
 			<!--Card-->
-            <div class="col-4">
+            <div class="mt-2 col-12 col-lg-4 ">
 				<div class="card">
-					<h3 class="card-header bg-dark text-white">Amazon</h3>
+					<h3 class="card-header bg-dark text-white"><img src="img/logo3.png" width="50em" alt="">&nbsp;&nbsp;Amazon</h3>
 					<div class="card-body">
 						<dl class="row">
 							<dt class="col-6">Open</dt>
-							<dd class="col-6">Value</dd>
+							<dd class="col-6" id="cap">3,054.86</dd>
 							<dt class="col-6">Close</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">High</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">Low</dt>
-							<dd class="col-6">Low</dd>
+							<dd class="col-6" id="cap">3,095.13</dd>
+							<dt class="col-6">High&nbsp;&nbsp;<img src="img/green.png" width="15em"></dt>
+							<dd class="col-6">3,101.54</dd>
+							<dt class="col-6">Low&nbsp;&nbsp;&nbsp;<img src="img/red.png" width="15em"></dt>
+							<dd class="col-6">2,999.00</dd>
 						</dl>	
+						<!--Prediction block button-->
+						<div class="col-12 col-sm align-self-center">
+							<!--modal predict-->
+							<a class="btn btn-secondary nav-link btn-block"data-toggle="modal" data-target="#predictionModal3"  href="#prediction" role="button" id="predictionModalToggle">Prediction</a>
+						</div>	
 					</div>
 				</div>
             </div>
@@ -94,58 +360,73 @@
 		</div>
 		<div class="row mt-5">
 			<!--Card-->
-            <div class="col-4">
+            <div class="mt-2 col-sm-12 col-lg-4 ">
 				<div class="card">
-					<h3 class="card-header bg-dark text-white">Facebook</h3>
+					<h3 class="card-header bg-dark text-white"><img src="img/logo4.png" width="50em" alt="">&nbsp;&nbsp;Facebook</h3>
 					<div class="card-body">
 						<dl class="row">
 							<dt class="col-6">Open</dt>
-							<dd class="col-6">Value</dd>
+							<dd class="col-6" id="cap">249.40</dd>
 							<dt class="col-6">Close</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">High</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">Low</dt>
-							<dd class="col-6">Low</dd>
+							<dd class="col-6" id="cap">254.82</dd>
+							<dt class="high col-6">High&nbsp;&nbsp;<img src="img/green.png" width="15em"></dt>
+							<dd class="col-6">255.75</dd>
+							<dt class="low col-6">Low&nbsp;&nbsp;&nbsp;<img src="img/red.png" width="15em"></dt>
+							<dd class="col-6">246.61</dd>
 						</dl>	
+						<!--Prediction block button-->
+						<div class="col-12 col-sm align-self-center">
+							<!--modal predict-->
+							<a class="btn btn-secondary nav-link btn-block"data-toggle="modal" data-target="#predictionModal4"  href="#prediction" role="button" id="predictionModalToggle">Prediction</a>
+						</div>	
 					</div>
 				</div>
             </div>
 			<!--end of card-->
 			<!--Card-->
-            <div class="col-4">
+            <div class="mt-2 col-sm-12 col-lg-4 ">
 				<div class="card">
-					<h3 class="card-header bg-dark text-white">Google</h3>
+					<h3 class="card-header bg-dark text-white"><img src="img/logo9.png" width="180em" height="48em" alt="">&nbsp;&nbsp;</h3>
 					<div class="card-body">
 						<dl class="row">
 							<dt class="col-6">Open</dt>
-							<dd class="col-6">Value</dd>
+							<dd class="col-6" id="cap">1,425.05</dd>
 							<dt class="col-6">Close</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">High</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">Low</dt>
-							<dd class="col-6">Low</dd>
+							<dd class="col-6" id="cap">1,439.06</dd>
+							<dt class="high col-6">High&nbsp;&nbsp;<img src="img/green.png" width="15em"></dt>
+							<dd class="col-6">1,445.94</dd>
+							<dt class="low col-6">Low&nbsp;&nbsp;&nbsp;<img src="img/red.png" width="15em"></dt>
+							<dd class="col-6">1,407.68</dd>
 						</dl>	
+						<!--Prediction block button-->
+						<div class="col-12 col-sm align-self-center">
+							<!--modal predict-->
+							<a class="btn btn-secondary nav-link btn-block"data-toggle="modal" data-target="#predictionModal5"  href="#prediction" role="button" id="predictionModalToggle">Prediction</a>
+						</div>	
 					</div>
 				</div>
             </div>
 			<!--end of card-->
 			<!--Card-->
-            <div class="col-4">
+            <div class="mt-2 col-sm-12 col-lg-4 ">
 				<div class="card">
-					<h3 class="card-header bg-dark text-white">Telsa</h3>
+					<h3 class="card-header bg-dark text-white"><img src="img/logo7.png" width="50em" alt="">&nbsp;&nbsp;Telsa</h3>
 					<div class="card-body">
 						<dl class="row">
 							<dt class="col-6">Open</dt>
-							<dd class="col-6">Value</dd>
+							<dd class="col-6" id="cap">393.47</dd>
 							<dt class="col-6">Close</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">High</dt>
-							<dd class="col-6">Value</dd>
-							<dt class="col-6">Low</dt>
-							<dd class="col-6">Low</dd>
+							<dd class="col-6" id="cap">407.34</dd>
+							<dt class="high col-6">High&nbsp;&nbsp;<img src="img/green.png" width="15em"></dt>
+							<dd class="col-6">408.73</dd>
+							<dt class="low col-6">Low&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/red.png" width="15em"></dt>
+							<dd class="col-6">391.30</dd>
 						</dl>	
+						<!--Prediction block button-->
+						<div class="col-8 col-sm align-self-center">
+							<!--modal predict-->
+							<a class="btn btn-secondary nav-link btn-block"data-toggle="modal" data-target="#predictionModal6"  href="#prediction" role="button" id="predictionModalToggle">Prediction</a>
+						</div>	
 					</div>
 				</div>
             </div>
