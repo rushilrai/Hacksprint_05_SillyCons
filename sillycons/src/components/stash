@@ -1,44 +1,23 @@
-render() {
-        const stockCardStyle = {
-            backgroundColor: 'white',
-            height: '200px',
-            width: '400px',
-            borderRadius: '10px',
-            boxShadow: '0px 0px 5px 5px #f5f5f6',
-            margin: '20px',
-        }
-        const textBoxStyle = {
-            margin: '20px',
-        }
-        const codeStyle = {
-            margin: '0px',
-            fontFamily: 'Lato',
-            color: 'grey',
-        }
-        const nameStyle = {
-            margin: '0px',
-            fontFamily: 'Lato',
-            color: 'black',
-        }
-        const highStyle = {
-            paddingTop: '5px',
-            margin: '0px',
-            fontFamily: 'Lato',
-            color: 'green',
-        }
-        const lowStyle = {
-            paddingTop: '5px',
-            margin: '0px',
-            fontFamily: 'Lato',
-            color: 'red',
-        }
-        return <div style={stockCardStyle}>
-            <div style={textBoxStyle}>
-                <h2 style={codeStyle}>MSFT</h2>
-                <h1 style={nameStyle}>Microsoft</h1>
-                <br></br>
-                <h3 style={highStyle}>H: $205.57</h3>
-                <h3 style={lowStyle}>L: $199.20</h3>
-            </div>
-        </div>;
-    }
+☜(⌒▽⌒)☞☜(⌒▽⌒)☞☜(⌒▽⌒)☞☜(⌒▽⌒)☞☜(⌒▽⌒)☞☜(⌒▽⌒)☞☜(⌒▽⌒)☞
+
+‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱‱
+
+(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)(⌐■_■)
+
+( •̀ .̫ •́ )✧( •̀ .̫ •́ )✧( •̀ .̫ •́ )✧( •̀ .̫ •́ )✧( •̀ .̫ •́ )✧( •̀ .̫ •́ )✧( •̀ .̫ •́ )✧
+
+༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ༼ つ ◕_◕ ༽つ
+
+(⊙_(⊙_⊙)_⊙)(⊙_(⊙_⊙)_⊙)(⊙_(⊙_⊙)_⊙)(⊙_(⊙_⊙)_⊙)(⊙_(⊙_⊙)_⊙)
+
+(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)(x_x)
+
+ヽ（≧□≦）ノヽ（≧□≦）ノヽ（≧□≦）ノヽ（≧□≦）ノヽ（≧□≦）ノヽ（≧□≦）ノ
+
+( ´･･)ﾉ(._.`)( ´･･)ﾉ(._.`)( ´･･)ﾉ(._.`)( ´･･)ﾉ(._.`)( ´･･)ﾉ(._.`)( ´･･)ﾉ(._.`)
+
+(✿◡‿◡)(✿◡‿◡)(✿◡‿◡)(✿◡‿◡)(✿◡‿◡)(✿◡‿◡)(✿◡‿◡)(✿◡‿◡)(✿◡‿◡)
+
+♪(^∇^*)♪(^∇^*)♪(^∇^*)♪(^∇^*)♪(^∇^*)♪(^∇^*)♪(^∇^*)♪(^∇^*)♪(^∇^*)♪(^∇^*)
+
+♪(´▽｀)♪(´▽｀)♪(´▽｀)♪(´▽｀)♪(´▽｀)♪(´▽｀)♪(´▽｀)♪(´▽｀)♪(´▽｀)♪(´▽｀)
